@@ -19,7 +19,7 @@ def get_database():
 
 def get_connection(config_file="../config/postgres.database.yaml"):
     with open(config_file,'r') as f:
-        vals = yaml.load(f)
+        vals = yaml.safe_load(f)
 
     if not ('production' in vals.keys()):
         raise Exception('Bad config file: ' + config_file)

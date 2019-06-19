@@ -11,5 +11,6 @@ engine = get_database()
 try:
     con = engine.raw_connection()
     con.cursor().execute("SET SCHEMA '{}'".format('your_schema_name'))
+    print("1...")
 except:
-    pass
+    print("2....")
