@@ -1,0 +1,21 @@
+# version the development
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: test_development
+  pool: 5
+  host: 127.0.0.1
+  port: 5432
+  username: sample_postgres
+  password:
+
+# version the production
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: test_base
+  pool: 5
+  host: 127.0.0.1
+  port: 5432
+  username: sample_postgres
+  password:
